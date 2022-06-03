@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faIdBadge,  faPlus , faUser, faComment } from '@fortawesome/free-solid-svg-icons';
 import { UserContext } from '../../../App';
-import logo from '../../../images/logo.svg';
+import logo from '../../../images/logo.png';
 
 const Sidebar = () => {
 

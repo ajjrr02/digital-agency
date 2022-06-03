@@ -18,9 +18,10 @@ const Header = () => {
                         <div className="row">
                             <div className="col-md-5">
                                 <animated.div className="home-inner" style={props}>
-                                    <h1>Let’s Grow Your Brand To The Next Level</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat duis laoreet maecenas.</p>
-                                    <button className="btn btn-primary btn-brand">Hire Us</button>
+                                    <h1>Let’s Grow Your Buisness To The Next Level</h1>
+                                    <p><strong>M</strong>arket <strong>H</strong>elp <strong>Agency</strong>  
+                                        . The first agency in Morocco  to specialize in BOTH digital marketing and IT project development 🖥.</p>
+                                    <a className="btn btn-primary btn-brand" href="#contact">Hire Us</a>
                                 </animated.div>
                             </div>
                             <animated.div  className="col-md-7" style={props}> 

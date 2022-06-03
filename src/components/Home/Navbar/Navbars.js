@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { UserContext } from '../../../App';
-import logo from '../../../images/logo.svg';
+import logo from '../../../images/logo.png';
 import './Navbar.css';
 import {Navbar, Nav, Container} from 'react-bootstrap';
 
@@ -33,14 +33,16 @@ const Navbars = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
-                            <Nav.Link to="/">Home</Nav.Link>
+                            <Nav.Link to="#home">Home</Nav.Link>
                             <Nav.Link href="#portfolio">Our Portfolio</Nav.Link>
                             <Nav.Link href="#review">Our Team</Nav.Link>
                             {
-                                isAdmin ? <Link className="btn btn-primary btn-brand" to="/allService">Admin Panel</Link> : <Nav.Link href="#contact">Contact Us</Nav.Link>
+                                isAdmin ? <Link className="btn btn-primary btn-brand" to="/allService">Admin Panel</Link> : 
+                                <Nav.Link href="#contact">Contact Us</Nav.Link>
                             }
                             {
-                                loggedInUser.name ? <Nav.Link href="#0" className="users">{loggedInUser.name}</Nav.Link> : <Link className="btn btn-primary btn-brand" to="/login">Login</Link>
+                                loggedInUser.name ? <Nav.Link href="/allservices" className="users">{loggedInUser.name}</Nav.Link> : 
+                                <Link className="btn btn-primary btn-brand" to="/login">Login</Link>
                             }
                         </Nav>
                     </Navbar.Collapse>
